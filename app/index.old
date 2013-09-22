@@ -6,13 +6,12 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TicketyTackety</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
 </head>
@@ -26,27 +25,19 @@
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
 
-    <h1><span class="tickety">Tickety</span><span class="tackety">Tackety</span></h1>
-  
-    <div id="gameboard">
-      <div id="row1" class="rw tr">
-        <div id="cell1" class="cll lt g">O</div>
-        <div id="cell2" class="cll ct"></div>
-        <div id="cell3" class="cll rt w">X</div>
-      </div>
-      <div id="row2" class="rw mr">
-        <div id="cell4" class="cll lm g">O</div>
-        <div id="cell5" class="cll cm w">X</div>
-        <div id="cell6" class="cll rm"></div>
-      </div>
-      <div id="row3" class="rw br">
-        <div id="cell7" class="cll lb w">X</div>
-        <div id="cell8" class="cll cb g">O</div>
-        <div id="cell9" class="cll rb g">X</div>
-      </div>
-    </div>
-  
-    <div id="play-btn"><a href="/21057" class="large button success">Play now!</a></div>
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view=""></div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
